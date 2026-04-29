@@ -1,0 +1,19 @@
+# Database
+database/*.db
+
+# Face data
+encodings/*.pkl
+
+# Environment
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+venv/
+
+# Logs
+logs/
+*.log

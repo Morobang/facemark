@@ -13,12 +13,12 @@ load_dotenv()
 
 # ── Organisation ──────────────────────────────────────────────────────────────
 ORG_NAME        = os.getenv("ORG_NAME", "My Organisation")
-MEMBER_LABEL    = os.getenv("MEMBER_LABEL", "member")   # learner / employee / student
+MEMBER_LABEL    = os.getenv("MEMBER_LABEL", "member")
 
 # ── Face Recognition ──────────────────────────────────────────────────────────
 FACE_TOLERANCE  = float(os.getenv("FACE_TOLERANCE", 0.5))
-FACE_MODEL      = os.getenv("FACE_MODEL", "hog")         # hog = CPU, cnn = GPU
-SCAN_INTERVAL   = int(os.getenv("SCAN_INTERVAL", 2))     # seconds between scans
+FACE_MODEL      = os.getenv("FACE_MODEL", "hog")
+SCAN_INTERVAL   = int(os.getenv("SCAN_INTERVAL", 2))
 
 # ── Database ──────────────────────────────────────────────────────────────────
 DB_PATH         = os.getenv("DB_PATH", "database/facemark.db")
