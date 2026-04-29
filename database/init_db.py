@@ -20,7 +20,7 @@ def init_db() -> sqlite3.Connection:
     # Make sure the database folder exists
     os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
 
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect(DB_PATH, check_same_thread=False)
     conn.row_factory = sqlite3.Row   # lets us access columns by name, not index
     cur = conn.cursor()
 
